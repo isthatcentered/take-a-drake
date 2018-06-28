@@ -9,6 +9,6 @@
         "default_title": "While on youtube, makes the difference between subscribe and subscribeD buttons obvious. Because I can !"
     },
     "chrome_url_overrides": {
-        "newtab": "src/index.html"
+        "newtab": "src/tab/index.html"
     }
 }
