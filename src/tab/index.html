@@ -7,7 +7,7 @@
 	<title>Take a Drake :D</title>
 	
 	<style>
-		
+		/** Structure **/
 		* {
 			margin:  0;
 			padding: 0;
@@ -25,20 +25,53 @@
 			bottom:   0;
 			right:    0;
 			padding:  1rem;
-			color:    white;
 		}
 		
-		.text span {
-			display:    block;
-			text-align: right;
+		._block {
+			display: block;
+		}
+		
+		/** SKIN **/
+		.js-loaded img {
+			opacity: 1;
+		}
+		
+		img {
+			transition: .5s;
+			opacity:    0;
+		}
+		
+		body {
+			background: #121212;
+			color:      white;
+		}
+		
+		._italic {
 			font-style: italic;
+		}
+		
+		._text-right {
+			text-align: right;
+		}
+		
+		.placeholder {
+			background: #9933ff;
 		}
 	</style>
 </head>
 <body>
 
-<img src="placeholder.jpg" alt="" id="hero">
-<div class="text">Thank you Drake !<span>(Source: <a href="https://giphy.com/">Giphy)</a></span></div>
+<img id="hero"
+     class="_block"
+     src=""
+     alt="Drake meme">
+
+<div class="text">
+	Thank you Drake !
+	<span class="_block _italic _text-right">
+		(Source: <a href="https://giphy.com/">Giphy)</a>
+	</span>
+</div>
 <script src="tab.js"></script>
 </body>
 </html>
