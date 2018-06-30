@@ -1,0 +1,28 @@
+{
+    "name": "take-a-drake",
+    "version": "1.0.0",
+    "description": "Replaces chrome's new tab with a Drake gift.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "parcel watch manifest.json src/tab/index.html",
+        "zip": "zip -r extension.zip dist",
+        "build": "parcel build manifest.json src/tab/index.html && yarn zip"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/isthatcentered/take-a-drake.git"
+    },
+    "keywords": [],
+    "author": "Edouard Penin <e.peninb@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/isthatcentered/take-a-drake/issues"
+    },
+    "homepage": "https://github.com/isthatcentered/take-a-drake#readme",
+    "devDependencies": {
+        "parcel-bundler": "^1.9.3",
+        "parcel-plugin-web-extension": "^1.1.0",
+        "typescript": "^2.9.2"
+    }
+}

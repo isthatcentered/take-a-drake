@@ -2,16 +2,16 @@
     "name": "Take a Drake",
     "manifest_version": 2,
     "version": "0.1",
-    "description": "Replaces chrome's new tab with a Drake gift. \nBecause sometimes we do need to take a Drake!",
+    "description": "Tired ? Open a new tab, take a Drake :)",
     "icons": {
+        "16": "cws assets/icon16.png",
+        "48": "cws assets/icon48.png",
+        "128": "cws assets/icon128.png"
     },
     "browser_action": {
-        "default_title": "While on youtube, makes the difference between subscribe and subscribeD buttons obvious. Because I can !"
+        "default_title": "Tired ? Open a new tab, take a Drake :)"
     },
     "chrome_url_overrides": {
         "newtab": "src/tab/index.html"
-    },
-    "web_accessible_resources": [
-        "static/*"
-    ]
+    }
 }
